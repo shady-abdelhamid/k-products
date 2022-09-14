@@ -1,1 +1,100 @@
-<p>products works!</p>
+<section class="products">
+  <form>
+    <div class="mb-3">
+      <label for="inputName" class="form-label">Product name</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Name"
+        id="inputName"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="inputCategory" class="form-label">Product Category</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Category"
+        id="inputCategory"
+      />
+    </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="subcategoryCheck" />
+        <label class="form-check-label" for="subcategoryCheck">
+          this is a sub-category
+        </label>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="inputName" class="form-label">Product type</label>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="typeRadio"
+          id="typeRadio1"
+        />
+        <label class="form-check-label" for="typeRadio1"> Type 1 </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="typeRadio"
+          id="typeRadio2"
+          checked
+        />
+        <label class="form-check-label" for="typeRadio2"> Type 2 </label>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="inputReferenceId" class="form-label"
+        >Reference Id (optional)</label
+      >
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Category"
+        id="inputReferenceId"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="inputPassword" class="form-label">Password</label>
+      <input type="password" id="inputPassword" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+      <label for="inputPassword" class="form-label">Delivery fees</label>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">EGP</span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Delivery fees"
+          aria-label="Delivery fees"
+          aria-describedby="basic-addon1"
+        />
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="inputPassword" class="form-label">Delivery fees</label>
+      <div class="input-group">
+        <span class="input-group-text" id="basic-addon2">%</span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Delivery fees"
+          aria-label="Delivery fees"
+          aria-describedby="basic-addon2"
+        />
+      </div>
+    </div>
+    <button type="button" class="btn btn-light">Cancel</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</section>
